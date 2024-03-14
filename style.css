@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-size: 20px;
+    height: 95vh;
+}
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+.choices {
+    padding: 40px;
+    margin:15px;
+    display: flex;
+    gap: 8px;
+    justify-content: space-around;
+}
+
+.choices input {
+    font-size: 30px;
+    text-transform: uppercase;
+    height: 100px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+input:hover{
+    border-color: red;
+    color: red;
+}
+.scoreboard {
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid grey;
+    background-color: beige;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.roundscore {
+    text-align: center;
+
+}
+
+.selection {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.frame {
+    margin-top: 30px;
+    border: 2px black solid;
+    padding: 30px;
+    font-size: 26px;
+    border-radius: 30px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+}
