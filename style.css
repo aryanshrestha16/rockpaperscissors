@@ -23,11 +23,10 @@ h1 {
 }
 
 .choices input {
-    font-size: 30px;
+    font-size: 150px;
     text-transform: uppercase;
-    height: 100px;
-    width: 300px;
-    border-radius: 20px;
+    width: 250px;
+    border-radius: 250px;
 }
 
 input:hover{
@@ -37,11 +36,7 @@ input:hover{
 .scoreboard {
     text-align: center;
     font-size: 30px;
-    border: 2px solid grey;
-    background-color: beige;
     width: 300px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .roundscore {
@@ -55,13 +50,33 @@ input:hover{
 }
 
 .frame {
-    margin-top: 30px;
     border: 2px black solid;
     padding: 30px;
     font-size: 26px;
     border-radius: 30px;
     width: 500px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: beige;
+    margin-left: auto;
+    margin-right: 150px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-top:30px;
+    justify-content: space-between;
+}
+#playAgain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 26px;
+    gap: 8px;
+}
+#playAgain input {
+    font-size: 26px;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    text-transform: capitalize;
 }

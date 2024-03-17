@@ -2,9 +2,9 @@
 const Choices = ["Rock","Scissors","Paper"];
 let playerWins = 0;
 let computerWins = 0;
-document.querySelector("#rock").addEventListener("click",() => playRound("Rock 🪨"));
-document.querySelector("#paper").addEventListener("click",() => playRound("Paper 📜"));
-document.querySelector("#scissor").addEventListener("click",() => playRound("Scissors ✂️"));
+document.querySelector("#rock").addEventListener("click",() => playRound("Rock"));
+document.querySelector("#paper").addEventListener("click",() => playRound("Paper"));
+document.querySelector("#scissor").addEventListener("click",() => playRound("Scissors"));
 
 
 
@@ -87,25 +87,18 @@ function updateScore() {
 }
 
 function announceWinner(winner){
-    const scoreboard = document.querySelector(".scoreboard");
+    const playAgain = document.getElementById("playAgain");
 
 
-    const playAgain = document.createElement("input");
-    playAgain.type = "button";
-    playAgain.value = "Play Again?";
-    playAgain.onclick = resetGame;
-    playAgain.style.height = "30px";
-    playAgain.style.width = "100px";
-    playAgain.style.borderRadius = "10px";
+    const playbutton = document.createElement("input");
+    playbutton.type = "button";
+    playbutton.value = "Play Again?";
+    playbutton.onclick = resetGame;
 
 
-    const results = document.createElement("div");
-    results.innerHTML = `${winner} has Won!<br>`;
-    results.style.margin = "20px";
-    results.classList.add("results");
+    playAgain.innerHTML = `${winner} has Won!<br>`;
 
 
-    results.appendChild(playAgain);
-    scoreboard.appendChild(results);
+    playAgain.appendChild(playbutton);
 
 }
